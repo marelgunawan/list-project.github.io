@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Card</title>
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+
+	<!-- Tailwind CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<style>
+		.font-popins {
+			font-family: 'Poppins', sans-serif;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Centered Content -->
+	<div class="w-full min-h-screen flex justify-center items-center bg-gray-700 font-popins">
+		<!-- Card Box -->
+		<div class="rounded-2xl bg-white shadow overflow-hidden p-8 flex flex-col max-w-md w-full">
+			<!-- Time -->
+			<div class="relative font-bold text-gray-700 flex items-center space-x-2">
+				<span>Wed, Nov 24 2021</span>
+				<span class="w-1 h-1 block rounded-full overflow-hidden bg-gray-700"></span>
+				<span>6:00 CEST</span>
+			</div>
+			<!-- Title -->
+			<span class="font-bold text-xl my-3">Sustainability in Product Design</span>
+			<!-- Place -->
+			<div class="relative font-semibold flex items-center space-x-2">
+				<!-- Icon -->
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+				</svg>
+				<span>Oslo</span>
+			</div>
+			<!-- Footer -->
+			<div class="relative flex items-center mt-7">
+				<!-- Image -->
+				<div class="flex flex-wrap items-center -space-x-1">
+					<img src="../image/Ellipse 1.png" alt="Ellipse 1" class="rounded w-9 h-9 overflow-hidden">
+					<img src="../image/Ellipse 2.png" alt="Ellipse 2" class="rounded w-9 h-9 overflow-hidden">
+					<img src="../image/Ellipse 3.png" alt="Ellipse 3" class="rounded w-9 h-9 overflow-hidden">
+				</div>
+				<span class="ml-3 text-gray-500 font-normal">+23</span>
+				<!-- Button -->
+				<button type="button" class="ml-auto rounded bg-blue-900 text-white rounded focus:outline-none px-4 py-2 font-medium">
+					Attend
+				</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
